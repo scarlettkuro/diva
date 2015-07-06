@@ -40,55 +40,22 @@ get_header(); ?>
 			<div class="industrial">
 				<p class="title">Промышленные коллекции</p>
 				<div class="items clearfix">
-					<div class="item">
-						<div class="watch">
-							<a href="#">Смотреть</a>
-						</div>
-					</div>
-					<div class="item">
-						<p class="title">
-							<span class="book">Коллекция</span>
-							<span class="bold">Весна</span>
-							<span class="bold-2">2015</span>
-						</p>
-						<div class="watch">
-							<a href="#">Смотреть</a>
-						</div>
-					</div>
-					<div class="item">
-						<p class="title">
-							<span class="book">Коллекция</span>
-							<span class="bold">Весна</span>
-							<span class="bold-2">Лето</span>
-							<span class="bold-3">2014</span>
-						</p>
-						<div class="watch">
-							<a href="#">Смотреть</a>
-						</div>
-					</div>
-					<div class="item">
-						<p class="title">
-							<span class="book">Коллекция</span>
-							<span class="bold">Осень-</span>
-							<span class="bold-2">Зима</span>
-							<span class="bold-3">2013-</span>
-							<span class="bold-4">2014</span>
-						</p>
-						<div class="watch">
-							<a href="#">Смотреть</a>
-						</div>
-					</div>
-					<div class="item">
-						<p class="title">
-							<span class="book">Коллекция</span>
-							<span class="bold">Весна-</span>
-							<span class="bold-2">Лето</span>
-							<span class="bold-3">2013</span>
-						</p>
-						<div class="watch">
-							<a href="#">Смотреть</a>
-						</div>
-					</div>
+					<?  
+					//wp_list_categories( array('orderby' => 'id','order'  => 'DESC','number' =>5));
+					$cats = get_categories( array('orderby' => 'id','order'  => 'DESC','number' =>5)); 
+					foreach($cats as $cat) {
+						echo '<div class="item"><p class="title">';
+						
+						$words = explode(' ', $category->name);
+						$styles = array('book','bold','bold-2','bold-3');
+						foreach($words as $index=>$word)
+							echo '<span class="' . $styles[$index] . ' ">' . $words[$index] . '</span>';
+						
+						echo '</p><div class="watch">';
+						echo '<a href="#">Смотреть</a>';
+						echo '</div></div>';
+					}
+					?>
 					<div class="item">
 						<p class="title">
 							<span class="bold">Другие</span>
@@ -97,6 +64,7 @@ get_header(); ?>
 							<a href="#">Смотреть</a>
 						</div>
 					</div>
+				
 				</div>
 			</div>
 			<div class="creative">
