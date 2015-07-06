@@ -43,10 +43,11 @@ get_header(); ?>
 					<?  
 					//wp_list_categories( array('orderby' => 'id','order'  => 'DESC','number' =>5));
 					$cats = get_categories( array('orderby' => 'id','order'  => 'DESC','number' =>5)); 
-					foreach($cats as $cat) {
+					foreach($cats as $cat) 
+						if ($cat->cat_ID!=1){
 						echo '<div class="item"><p class="title">';
 						
-						$words = explode(' ', $category->name);
+						$words = explode(' ', $cat->name);
 						$styles = array('book','bold','bold-2','bold-3');
 						foreach($words as $index=>$word)
 							echo '<span class="' . $styles[$index] . ' ">' . $words[$index] . '</span>';
