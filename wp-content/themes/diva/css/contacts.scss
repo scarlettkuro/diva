@@ -1,0 +1,44 @@
+// ------------------------global------------------------
+
+.container {
+	width: 960px;
+	margin: 0 auto;
+}
+
+body {
+	background: #e3e3e3;
+	font-family: 'PT Sans', arial, sans-serif;
+	font-size: 14px;
+}
+
+// ------------variables------------
+
+	$orange: #f26536;
+	$green: #2eafb0;
+	$grey: #e2e3e5;
+
+	$bold: 600;
+	$reg: 400;
+	$light: 300;
+
+	$sans: 'PT Sans', arial, sans-serif;
+	$fedra-normal: 'FedraSansPro-Normal', arial, sans-serif;
+	$fedra-bold: 'FedraSansPro-Bold', arial, sans-serif;
+	$fedra-light: 'FedraSansPro-Light', arial, sans-serif;
+	$fedra-medium: 'FedraSansPro-Medium', arial, sans-serif;
+
+
+// ----------variables end----------
+
+// ----------------------global end----------------------
+
+// ------------------------imports------------------------
+
+@import 'blocks/header';
+
+@import 'blocks/contact-block';
+@import 'blocks/form';
+
+@import 'blocks/footer';
+
+// ----------------------imports end----------------------

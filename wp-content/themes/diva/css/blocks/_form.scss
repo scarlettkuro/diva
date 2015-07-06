@@ -1,0 +1,117 @@
+.form {
+	min-height: 230px;
+	background: #e2e3e5;
+
+	.layer {
+		min-height: 230px;
+		background: #E2E3E5 url("../images/form/bg-layer.png")center no-repeat;
+	}
+
+	.content {
+		width: 460px;
+		margin: 0 auto;
+		position: relative;
+	}
+	.magazine {
+		width: 155px;
+		height: 200px;
+		position: absolute;
+		top: 10px;
+		background: url("../images/form/magazine.png")center no-repeat;
+	}
+
+	form {
+		padding-top: 20px;
+		text-align: right;
+		.input-wrap {
+			display: inline-block;
+			border: 1px solid $green;
+			border-radius: 5px;
+			-moz-border-radius: 5px;
+			-webkit-border-radius: 5px;
+			margin-bottom: 10px;
+			transition: all 0.2s ease-in;
+			-moz-transition: all 0.2s ease-in;
+			-o-transition: all 0.2s ease-in;
+			-webkit-transition: all 0.2s ease-in;
+
+			&:hover {
+				-webkit-box-shadow: 0px 0px 10px 0px rgba(46, 175, 178, 0.6);
+				-moz-box-shadow:    0px 0px 10px 0px rgba(46, 175, 178, 0.6);
+				box-shadow:         0px 0px 10px 0px rgba(46, 175, 178, 0.6);
+				transition: all 0.2s ease-in;
+				-moz-transition: all 0.2s ease-in;
+				-o-transition: all 0.2s ease-in;
+				-webkit-transition: all 0.2s ease-in;
+			}
+
+			.input-in {
+				display: inline-block;
+				padding-left: 42px;
+				background: $orange url("../images/form/form-name.png")13px center no-repeat;
+				border-radius: 3px;
+				-moz-border-radius: 3px;
+				-webkit-border-radius: 3px;
+				overflow: hidden;
+				margin: 3px;
+				box-sizing: border-box;
+
+				input, textarea {
+					padding: 9px 11px;
+					background: #fff;
+					border: 0;
+					font-size: 13px;
+					font-family: $sans;
+					color: #000;
+					outline: none;
+					width: 180px;
+				}
+				
+			}
+		}
+		.mail {
+			.input-in {
+				background: $orange url("../images/form/form-mail.png")13px center no-repeat;
+			}
+		}
+		.phone {
+			.input-in {
+				background: $orange url("../images/form/form-phone.png")13px center no-repeat;
+			}
+			margin-bottom: 0;
+		}
+		.get-button {
+			text-align: center;
+			padding: 10px 0 10px 50px;
+
+			input {
+				padding: 8px 12px;
+				background: $orange;
+				border: 0;
+				color: #fff;
+				text-transform: uppercase;
+				font-size: 13px;
+				font-family: $sans;
+				font-weight: $light;
+				cursor: pointer;
+				border-radius: 3px;
+				-moz-border-radius: 3px;
+				-webkit-border-radius: 3px;
+				transition: all 0.2s ease-in;
+				-moz-transition: all 0.2s ease-in;
+				-o-transition: all 0.2s ease-in;
+				-webkit-transition: all 0.2s ease-in;
+
+				&:hover {
+					order-radius: 10px;
+					-moz-border-radius: 10px;
+					-webkit-border-radius: 10px;
+					transition: all 0.2s ease-in;
+					-moz-transition: all 0.2s ease-in;
+					-o-transition: all 0.2s ease-in;
+					-webkit-transition: all 0.2s ease-in;
+				}
+			}
+		}
+	}
+}

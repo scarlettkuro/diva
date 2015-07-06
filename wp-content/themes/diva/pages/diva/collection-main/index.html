@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Diva</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="fonts/FedraSansPro/fonts.css">
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+	<script src="http://f.vimeocdn.com/js/froogaloop2.min.js"></script>
+</head>
+<body>
+<header>
+	<div class="container">
+		<div class="logo">
+			<a href="#"></a>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="#">Главная</a></li>
+				<li><a href="#">О компании</a></li>  
+				<li><a href="#">Доставка</a></li>
+				<li><a href="#">Коллекции</a></li>	
+				<li><a href="#">Контакты</a></li>
+			</ul>
+		</nav>
+		<div class="contact-us">
+			<div class="button">
+				<a href="#">Закажите звонок</a>
+			</div>
+			<span class="description">Мы Вам перезвоним</span>
+
+		</div>
+	</div>
+</header>
+<section class="collections" id="collections">
+	<div class="container">
+		<div class="content">
+			<div class="industrial">
+				<p class="title">Промышленные коллекции</p>
+				<div class="items clearfix">
+					<div class="item">
+						<div class="watch">
+							<a href="#">Смотреть</a>
+						</div>
+					</div>
+					<div class="item">
+						<p class="title">
+							<span class="book">Коллекция</span>
+							<span class="bold">Весна</span>
+							<span class="bold-2">2015</span>
+						</p>
+						<div class="watch">
+							<a href="#">Смотреть</a>
+						</div>
+					</div>
+					<div class="item">
+						<p class="title">
+							<span class="book">Коллекция</span>
+							<span class="bold">Весна</span>
+							<span class="bold-2">Лето</span>
+							<span class="bold-3">2014</span>
+						</p>
+						<div class="watch">
+							<a href="#">Смотреть</a>
+						</div>
+					</div>
+					<div class="item">
+						<p class="title">
+							<span class="book">Коллекция</span>
+							<span class="bold">Осень-</span>
+							<span class="bold-2">Зима</span>
+							<span class="bold-3">2013-</span>
+							<span class="bold-4">2014</span>
+						</p>
+						<div class="watch">
+							<a href="#">Смотреть</a>
+						</div>
+					</div>
+					<div class="item">
+						<p class="title">
+							<span class="book">Коллекция</span>
+							<span class="bold">Весна-</span>
+							<span class="bold-2">Лето</span>
+							<span class="bold-3">2013</span>
+						</p>
+						<div class="watch">
+							<a href="#">Смотреть</a>
+						</div>
+					</div>
+					<div class="item">
+						<p class="title">
+							<span class="bold">Другие</span>
+						</p>
+						<div class="watch">
+							<a href="#">Смотреть</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="creative">
+				<p class="title">Творческие коллекции</p>
+				<div class="items clearfix">
+					<div class="item">
+						<p class="title">
+							<span class="text-left">Aqua-</span>
+							<span class="text-right">terra</span>
+						</p>
+						<div class="watch">
+							<a href="#">Смотреть</a>
+						</div>
+					</div>
+					<div class="item">
+						<p class="title">
+							<span>Замок белой цапли</span>
+						</p>
+						<div class="watch">
+							<a href="#">Смотреть</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<p class="title">Получите каталог с оптовыми ценами</p>
+		</div>
+	</div>
+</section>
+<section class="form" id="form">
+	<div class="layer">
+		<div class="container">
+			<div class="content">
+				<div class="magazine">
+				</div>
+				<form action="">
+					<div class="input-wrap name">
+						<div class="input-in">
+							<input type="text" placeholder="Ваше имя">
+						</div>
+					</div>
+					<div class="input-wrap mail">
+						<div class="input-in">
+							<input type="text" placeholder="ваш e-mail">
+						</div>
+					</div>
+					<div class="input-wrap phone">
+						<div class="input-in">
+							<input type="text" placeholder="Ваш телефон с кодом">
+						</div>
+					</div>
+					<div class="get-button">
+						<input type="submit" value="Получить">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+<footer>
+	<div class="container">
+		<div class="content">
+			<div class="copyright">
+				<span>
+					© 2015 Все права защищены
+				</span>
+			</div>
+			<div class="logo">
+				<a href="#">Разработка и продвижение сайтов</a>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">Доставка</a></li>
+					<li><a href="#">Коллекции</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</footer>
+<script>
+	var iframe = document.getElementsByTagName('iframe')[0];
+	var player = $f( iframe );
+ 	player.addEvent('ready', function() {
+	player.api('setVolume', 0); 
+});
+</script>
+</body>
+</html>

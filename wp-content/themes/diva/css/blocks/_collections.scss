@@ -1,0 +1,377 @@
+.collections {
+	
+	.content {
+		.title {
+			font-size: 26px;
+			color: #000;
+			text-align: center;
+			font-weight: $bold;
+			padding: 25px 0;
+		}
+
+		.industrial {
+			.items {
+				.item {
+					box-sizing: border-box;
+					position: relative;
+					border: 6px solid $grey;
+					float: left;
+					vertical-align: top;
+
+					.watch {
+						display: inline-block;
+						position: absolute;
+						a {
+							display: block;
+							padding: 13px 15px;
+							background: $orange;
+							text-decoration: none;
+							color: #fff;
+							border-radius: 2px;
+							-moz-border-radius: 2px;
+							-webkit-border-radius: 2px;
+							transition: all 0.2s ease-out;
+							-moz-transition: all 0.2s ease-out;
+							-o-transition: all 0.2s ease-out;
+							-webkit-transition: all 0.2s ease-out;
+							cursor: pointer;
+							&:hover {
+								border-radius: 10px;
+								-moz-border-radius: 10px;
+								-webkit-border-radius: 10px;
+								transition: all 0.2s ease-out;
+								-moz-transition: all 0.2s ease-out;
+								-o-transition: all 0.2s ease-out;
+								-webkit-transition: all 0.2s ease-out;
+							}
+						}
+					}
+
+					&:first-child {
+						width: 468px;
+						height: 388px;
+						background: url("../images/collections/industrial/item-1.jpg")center no-repeat;
+						margin-right: 20px;
+
+						.watch {
+							bottom: 5px;
+							right: 74px;
+						}
+					}
+					&:nth-child(2) {
+						background: url("../images/collections/industrial/item-2.jpg")center no-repeat;
+						p {
+							width: 105px;
+							position: absolute;
+							text-align: right;
+							top: 50px; 
+							span {
+								display: block;
+								&.book {
+									font-family: 'FedraSansPro-Normal';
+									color: #000;
+									font-size: 9px;
+									text-transform: uppercase;
+								}
+								&.bold {
+									font-size: 34px;
+									color: #009245;
+								}
+								&.bold-2 {
+									color: #39b54a;
+									font-size: 25px;
+									text-align: right;
+								}
+							}
+						}
+						.watch {
+							bottom: 17px;
+							left: 15px;
+							font-size: 13px;
+							a {
+								padding: 10px 12px;
+							}
+
+						}
+					}
+					&:nth-child(3) {
+						background: url("../images/collections/industrial/item-3.jpg")center no-repeat;
+						p {
+							width: 105px;
+							position: absolute;
+							text-align: right;
+							top: 55px; 
+							right: 16px;
+							span {
+								display: block;
+								&.book {
+									font-family: 'FedraSansPro-Normal';
+									color: #000;
+									font-size: 9px;
+									text-transform: uppercase;
+								}
+								&.bold {
+									font-size: 30px;
+									color: #8aa53b;
+									line-height: 26px;
+									padding-top: 4px;
+								}
+								&.bold-2 {
+									color: #fe5f39;
+									font-size: 30px;
+									text-align: right;
+									line-height: 26px;
+								}
+								&.bold-3 {
+									font-size: 18px;
+									color: #44722e;
+								}
+							}
+						}
+						.watch {
+							bottom: 7px;
+							right: 15px;
+							font-size: 13px;
+							a {
+								padding: 10px 12px;
+							}
+
+						}
+					}
+					&:nth-child(4) {
+						background: url("../images/collections/industrial/item-4.jpg")center no-repeat;
+						p {
+							width: 75px;
+							position: absolute;
+							text-align: right;
+							top: 5px; 
+							right: 5px;
+							padding: 0;
+							span {
+								display: block;
+								&.book {
+									font-family: 'FedraSansPro-Normal';
+									color: #000;
+									font-size: 4px;
+									text-transform: lowercase;
+								}
+								&.bold {
+									font-size: 21px;
+									color: #662d91;
+									line-height: 18px;
+									padding-top: 4px;
+								}
+								&.bold-2 {
+									color: #2e3192;
+									font-size: 21px;
+									text-align: right;
+									line-height: 18px;
+								}
+								&.bold-3 {
+									font-size: 14px;
+									color: #c69c6d;
+								}
+								&.bold-4 {
+									font-size: 14px;
+									color: #a67c52;
+								}
+							}
+						}
+						.watch {
+							bottom: 7px;
+							right: 15px;
+							font-size: 13px;
+							a {
+								padding: 10px 12px;
+							}
+
+						}
+					}
+					&:nth-child(5) {
+						background: url("../images/collections/industrial/item-5.jpg")center no-repeat;
+						p {
+							width: 75px;
+							position: absolute;
+							text-align: left;
+							top: 5px; 
+							left: 5px;
+							padding: 0;
+							span {
+								display: block;
+								&.book {
+									font-family: 'FedraSansPro-Normal';
+									color: #000;
+									font-size: 4px;
+									text-transform: lowercase;
+								}
+								&.bold {
+									font-size: 21px;
+									color: #8cc63f;
+									line-height: 18px;
+									padding-top: 2px;
+								}
+								&.bold-2 {
+									color: #fbb03b;
+									font-size: 21px;
+									line-height: 18px;
+								}
+								&.bold-3 {
+									font-size: 14px;
+									color: #22b573;
+								}
+							}
+						}
+						.watch {
+							bottom: 7px;
+							right: 15px;
+							font-size: 13px;
+							a {
+								padding: 10px 12px;
+							}
+						}
+					}
+					&:nth-child(6) {
+						background: url("../images/collections/industrial/item-6.jpg")center no-repeat;
+						p {
+							width: 75px;
+							position: absolute;
+							text-align: right;
+							top: 40px; 
+							right: 5px;
+							padding: 0;
+							span {
+								&.bold {
+									font-size: 16px;
+									color: $orange;
+								}
+							}
+						}
+						.watch {
+							bottom: 7px;
+							right: 15px;
+							font-size: 13px;
+							a {
+								padding: 10px 12px;
+							}
+						}
+					}
+					&:nth-child(2), &:nth-child(3) {
+						width: 219px;
+						height: 219px;
+						margin-right: 10px;
+						margin-top: 7px;
+					}
+					&:nth-child(4), &:nth-child(5), &:nth-child(6) {
+						margin-top: 10px;
+						width: 138px;
+						height: 144px;
+						margin-right: 15px;
+					}
+					&:last-child {
+						margin-right: 0;
+					}
+				}
+			}
+		}
+		.creative {
+			.items {
+				.item {
+					width: 468px;
+					height: 305px;
+					box-sizing: border-box;
+					border: 6px solid $grey;
+					float: left;
+					margin-right: 20px;
+					position: relative;
+					.watch {
+						display: inline-block;
+						position: absolute;
+						a {
+							display: block;
+							padding: 13px 15px;
+							background: $orange;
+							text-decoration: none;
+							color: #fff;
+							border-radius: 2px;
+							-moz-border-radius: 2px;
+							-webkit-border-radius: 2px;
+							transition: all 0.2s ease-out;
+							-moz-transition: all 0.2s ease-out;
+							-o-transition: all 0.2s ease-out;
+							-webkit-transition: all 0.2s ease-out;
+							cursor: pointer;
+							&:hover {
+								border-radius: 10px;
+								-moz-border-radius: 10px;
+								-webkit-border-radius: 10px;
+								transition: all 0.2s ease-out;
+								-moz-transition: all 0.2s ease-out;
+								-o-transition: all 0.2s ease-out;
+								-webkit-transition: all 0.2s ease-out;
+							}
+						}
+					}
+					.title {
+						position: absolute;
+						text-align: left;
+						width: 150px;
+						span {
+							display: block;
+							font-size: 30px;
+						}
+					}
+					&:nth-child(2n){
+						margin-right: 0;
+					}
+					&:first-child {
+						background: url("../images/collections/creative/item-1.jpg")center no-repeat;
+						.title {
+							padding: 0;
+							width: 135px;
+							bottom: 25px;
+							right: 15px;
+							span {
+								font-size: 37px;
+								line-height: 30px;
+								color: $orange;
+							}
+							.text-left {
+								text-align: left;
+							}
+							.text-right {
+								text-align: right;
+							}
+						}
+						.watch {
+							right: 15px;
+							bottom: 100px;
+							a {
+								padding: 10px 12px;
+							}
+						}
+
+					}
+					&:nth-child(2) {
+						background: url("../images/collections/creative/item-2.jpg")center no-repeat;
+						.title {
+							left: 30px;
+							top: 80px;
+							padding: 0;
+							span {
+								font-size: 37px;
+							}
+						}
+						.watch {
+							bottom: 40px;
+							left: 30px;
+							a {
+								padding: 12px 20px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+}

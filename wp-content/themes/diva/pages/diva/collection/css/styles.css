@@ -1,0 +1,431 @@
+body {
+	font-family: 'PT Sans', sans-serif;
+	overflow-x: hidden;
+  background: #dadadc url(../images/bg.jpg) center center no-repeat;
+}
+.container {
+	width: 960px;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  background: #e3e3e4;
+  text-align: center;
+  z-index: 99999;
+}
+header .logo {
+  float: left;
+  padding-top: 25px;
+}
+header .logo a {
+  display: block;
+  width: 161px;
+  height: 42px;
+  background: url("../images/header/logo.png") center no-repeat;
+}
+header nav {
+  display: inline-block;
+  padding-top: 35px;
+}
+header nav ul li {
+  display: inline-block;
+  border-right: 1px solid #666666;
+}
+header nav ul li a, header nav ul li select {
+  display: block;
+  padding: 9px 15px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #2eafb0;
+  text-decoration: none;
+}
+header nav ul li select {
+  border: 0;
+  background: transparent;
+}
+header nav ul li a:hover, header nav ul li select:hover {
+  color: #f1831d;
+}
+header .contact-us {
+  float: right;
+  padding-top: 25px;
+}
+header .contact-us .button a {
+  display: inline-block;
+  border: 1px solid #2eafb0;
+  padding: 13px 19px;
+  background: #2eafb0;
+  color: #fff;
+  font-size: 13px;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+}
+header .contact-us .button a:hover {
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  webkit-border-radius: 10px;
+  background: transparent;
+  color: #000;
+  transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+}
+header .contact-us .description {
+  display: inline-block;
+  padding-top: 3px;
+  font-size: 11px;
+  color: #333132;
+}
+
+.catalog-slider {
+	padding-top: 135px;
+	-webkit-transition: all 0.2s;
+  -khtml-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  z-index: 999;
+}
+.catalog-slider .slider-head {
+	text-align: center;
+	padding-bottom: 40px;
+} 
+.catalog-slider .slider-head .title {
+	font-size: 22px;
+	color: #.catalog-slider .slider-
+}
+
+.description-block {
+  width: 755px;
+  margin: 30px auto 50px;
+}
+.description-block .description {
+  overflow: hidden;
+}
+.description .pictures {
+  float: left;
+}
+.description .pictures .options {
+  margin-top: 10px;
+}
+.description .pictures .options .option {
+  display: inline-block;
+  padding: 3px;
+  margin-right: 2px;
+}
+.description .pictures .options .option:hover {
+  border: 1px solid #2eafb0;
+}
+.description .pictures .options .option:last-child {
+  margin-right: 0;
+}
+.description .info {
+  margin-left: 320px;
+}
+.description .info .title {
+
+}
+.description .info .title .name {
+  font-size: 15px;
+  color: #1a1a1a;
+  padding-top: 10px;
+}
+.description .info .title .size {
+  font-size: 12px;
+  color: #1a1a1a;
+  padding-top: 10px;
+}
+.description .info .title .get-price {
+  display: inline-block;
+  padding: 10px 10px 9px;
+  font-size: 13px;
+  color: #fff;
+  text-decoration: none;
+  background: #2eafb0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: all 0.2s;
+  -khtml-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  margin-top: 22px;
+}
+.description .info .title .get-price:hover {
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+}
+.description .info .colors {
+  margin-top: 50px;
+}
+.description .info .colors .name {
+  font-size: 15px;
+  color: #1a1a1a;
+}
+.description .info .colors .color {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border: 2px solid #cccccc;
+  margin-top: 10px;
+  background: #fff;
+}
+.description .info .form {
+  padding-top: 45px;
+  width: 455px;
+}
+.description .info .form form {
+  text-align: left;
+}
+.description .info .form form .input-wrap {
+  box-shadow: none;
+}
+.description .info .form form .input-wrap .input-in {
+  margin-top: 5px;
+  background-color: #FF8400;
+}
+.description .info .form form .input-wrap .input-in input {
+  width: 135px;
+  font-size: 11px;
+}
+.description .info .form form .input-wrap .input-in input::-webkit-input-placeholder {color:#a3a6a7;}
+.description .info .form form .input-wrap .input-in input::-moz-placeholder          {color:#a3a6a7;}
+.description .info .form form .input-wrap .input-in input:-moz-placeholder           {color:#a3a6a7;}
+.description .info .form form .input-wrap .input-in input:-ms-input-placeholder      {color:#a3a6a7;}
+.description .info .form form .get-button {
+  display: inline-block;
+  padding-left: 0;
+  text-align: left;
+}
+.description .info .form form .get-button input {
+  text-transform: none;
+  background: #FF8400;
+}
+.description .info .form form .textarea {
+  padding-left: 43px;
+  position: relative;
+}
+.description .info .form form .textarea textarea {
+  resize: none;
+  outline: none;
+  padding: 10px;
+  border: 1px solid #2eafb0;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  text-transform: uppercase;
+}
+.description .info .form form .textarea:after {
+  display: block;
+  content: "";
+  width: 45px;
+  height: 39px;
+  background: url("../images/form/textarea.png") center no-repeat;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.description .info .form .wrap {
+  vertical-align: top;
+  width: 200px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.form {
+  height: 230px;
+}
+.form .layer {
+  height: 230px;
+  background: url("../images/form/bg-layer.png") center no-repeat;
+}
+.form .content {
+  width: 460px;
+  margin: 0 auto;
+  position: relative;
+}
+.form .magazine {
+  width: 155px;
+  height: 200px;
+  position: absolute;
+  top: 10px;
+  background: url("../images/form/magazine.png") center no-repeat;
+}
+.form form {
+  padding-top: 20px;
+  text-align: right;
+}
+.form form .input-wrap {
+  display: inline-block;
+  border: 1px solid #2eafb0;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  margin-bottom: 10px;
+  transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+}
+.form form .input-wrap:hover {
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(46, 175, 178, 0.6);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(46, 175, 178, 0.6);
+  box-shadow: 0px 0px 10px 0px rgba(46, 175, 178, 0.6);
+  transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+}
+.form form .input-wrap .input-in {
+  display: inline-block;
+  padding-left: 42px;
+  background: #f26536 url("../images/form/name.png") 13px center no-repeat;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  overflow: hidden;
+  margin: 3px;
+  box-sizing: border-box;
+}
+.form form .input-wrap .input-in input, .form form .input-wrap .input-in textarea {
+  padding: 9px 11px;
+  background: #fff;
+  border: 0;
+  font-size: 13px;
+  font-family: "PT Sans", arial, sans-serif;
+  color: #000;
+  outline: none;
+  width: 180px;
+}
+.form form .input-wrap .input-in input::-webkit-input-placeholder {
+  color: #e2e3e5;
+  text-transform: uppercase;
+  font-family: "PT Sans", arial, sans-serif;
+}
+.form form .input-wrap .input-in input:-moz-placeholder {
+  color: #e2e3e5;
+  text-transform: uppercase;
+  font-family: "PT Sans", arial, sans-serif;
+}
+.form form .mail .input-in {
+  background: #f26536 url("../images/form/email.png") 13px center no-repeat;
+}
+.form form .phone .input-in {
+  background: #f26536 url("../images/form/phone.png") 13px center no-repeat;
+}
+.form form .get-button {
+  text-align: center;
+  padding-left: 50px;
+}
+.form form .get-button input {
+  padding: 8px 12px;
+  background: #f26536;
+  border: 0;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-family: "PT Sans", arial, sans-serif;
+  font-weight: 300;
+  cursor: pointer;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+}
+.form form .get-button input:hover {
+  order-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+}
+
+footer {
+  box-sizing: border-box;
+  height: 85px;
+  background: #2eafb0;
+  text-align: center;
+}
+footer .content {
+  padding: 30px 0;
+}
+footer .copyright {
+  width: 50px;
+  font-size: 10px;
+  line-height: 11px;
+  font-family: 'PT Sans',arial,sans-serif;
+  color: #fff;
+  float: left;
+  text-align: left;
+}
+footer .logo {
+  width: 70px;
+  float: right;
+  text-align: left;
+}
+footer .logo a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 10px;
+  line-height: 11px;
+}
+footer nav {
+  display: inline-block;
+}
+footer nav ul li {
+  display: inline-block;
+  border-right: 1px solid #fff;
+}
+footer nav ul li a {
+  display: block;
+  padding: 2px 18px;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+/*BX-SLIDER STYLES*/
+.bx-wrapper {
+	max-width: 770px !important;
+}
+.bx-viewport {
+	height: 130px !important;
+}
+.bx-wrapper .bx-viewport .item {
+	padding: 3px 12px 3px 2px !important;
+	margin: 0 5px;
+	width: 104px !important;
+	-webkit-transition: all 0.2s;
+    -khtml-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+/*END BX-SLIDER STYLES*/
