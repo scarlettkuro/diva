@@ -41,19 +41,24 @@ get_header(); ?>
 				<p class="title">Промышленные коллекции</p>
 				<div class="items clearfix">
 					<?  
-					//wp_list_categories( array('orderby' => 'id','order'  => 'DESC','number' =>5));
-					$cats = get_categories( array('orderby' => 'id','order'  => 'DESC','number' =>5)); 
-					foreach($cats as $cat) 
-						if ($cat->cat_ID!=1){
-						echo '<div class="item"><p class="title">';
+					$industrialID = get_cat_ID( 'industrial' );
+					$creativeID = get_cat_ID( 'creative' );
+					$cats = get_categories( array('orderby' => 'id','child_of'=> '' . $industrialID ,'order'  => 'DESC','number' =>5,'exclude' => '1,' . $industrialID . ',' . $creativeID)); 
+					foreach($cats as $cat) {
+						echo '<div class="item">';
+						
+						echo '<p class="title">';
 						
 						$words = explode(' ', $cat->name);
 						$styles = array('book','bold','bold-2','bold-3');
 						foreach($words as $index=>$word)
 							echo '<span class="' . $styles[$index] . ' ">' . $words[$index] . '</span>';
 						
-						echo '</p><div class="watch">';
-						echo '<a href="#">Смотреть</a>';
+						echo '</p>';
+						
+						echo '<div class="watch">';
+						echo '<a href="/?cat=' . $cat->cat_ID //get_category_link( $cat->cat_ID ) 
+						.'">Смотреть</a>';
 						echo '</div></div>';
 					}
 					?>

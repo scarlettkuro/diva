@@ -353,3 +353,12 @@ require get_template_directory() . '/inc/template-tags.php';
  * @since Twenty Fifteen 1.0
  */
 require get_template_directory() . '/inc/customizer.php';
+
+//--------------------------------------------------------------------------------------------------
+function insert_parent_categories() {
+if(!is_term('industrial','category'))
+	  wp_insert_term('industrial','category',array('cat_ID' => 1 ,'category_description' => 'Промышленные коллекции', 'taxonomy' => 'category'));
+if(!is_term('industrial','category'))
+	  wp_insert_term('creative','category',array('cat_ID' => 2,'category_description' => 'Творческие коллекции', 'taxonomy' => 'category'));
+}
+add_action( 'after_setup_theme', 'insert_parent_categories' );
