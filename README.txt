@@ -11,3 +11,5 @@ Collection page:
 Archive page with list of collections : 0%
 About page: 0%
 Contacts page: 0%
+
+Also, for unkown reason site needs WCS Custom Permalinks Hotfix 
