@@ -17,7 +17,7 @@
 get_header(); ?>
 <section class="atmosphere" id="atmosphere">
 	<div class="layer">
-		<video src="video/video.mp4" autoplay muted loop></video>
+		<video src="<?php echo esc_url( get_template_directory_uri() ); ?>/video/video.mp4" autoplay muted loop></video>
 	</div>
 	<div class="container">
 		<div class="content">
@@ -43,6 +43,7 @@ get_header(); ?>
 					<?  
 					$industrialID = get_cat_ID( 'industrial' );
 					$creativeID = get_cat_ID( 'creative' );
+					/*wp_list_categories( array('orderby' => 'id','child_of'=> '' . $industrialID ,'order'  => 'DESC','number' =>5,'exclude' => '1,' . $industrialID . ',' . $creativeID)); */
 					$cats = get_categories( array('orderby' => 'id','child_of'=> '' . $industrialID ,'order'  => 'DESC','number' =>5,'exclude' => '1,' . $industrialID . ',' . $creativeID)); 
 					foreach($cats as $cat) {
 						echo '<div class="item">';
@@ -57,7 +58,10 @@ get_header(); ?>
 						echo '</p>';
 						
 						echo '<div class="watch">';
-						echo '<a href="/?cat=' . $cat->cat_ID //get_category_link( $cat->cat_ID ) 
+						echo '<a href="' . 
+						//get_template_directory_uri()  . 
+						//'/category.php?cat=' . $cat->name 
+						get_category_link( $cat->cat_ID ) 
 						.'">Смотреть</a>';
 						echo '</div></div>';
 					}
